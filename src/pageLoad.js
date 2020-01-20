@@ -10,6 +10,7 @@ function loadHeader() {
 
     const title = document.createElement("h1")
     title.textContent = carbLoad
+    title.className = "carbLoad"
 
     header.appendChild(title)
 
