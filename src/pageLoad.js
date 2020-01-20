@@ -1,16 +1,16 @@
-import {carbLoadDesc, carbLoad, menuItems} from './restInfo'
+import { carbLoadDesc, carbLoad, menuItems } from './restInfo'
 
 const content = document.querySelector("#content")
 
 
 function loadHeader() {
     const header = document.createElement("div")
-    
+
     header.id = "header"
-    
+
     const title = document.createElement("h1")
     title.textContent = carbLoad
-    
+
     header.appendChild(title)
 
     content.appendChild(header)
@@ -22,7 +22,7 @@ function loadDescription() {
     description.id = "description"
 
     // add a new <p> element for each line of the description
-    for(let i = 0; i < carbLoadDesc.length; i++){
+    for (let i = 0; i < carbLoadDesc.length; i++) {
         const descLine = document.createElement("p")
         descLine.textContent = carbLoadDesc[i]
 
@@ -32,7 +32,7 @@ function loadDescription() {
     return description
 }
 
-function createMenuList(list, parentNode){
+function createMenuList(list, parentNode) {
     list.forEach(item => {
         let name = item.name
         let price = item.price
@@ -72,7 +72,7 @@ function loadMenu() {
 
     menu.appendChild(pastaTitle)
     menu.appendChild(pastaList)
-    
+
     menu.appendChild(sidesTitle)
     menu.appendChild(sidesList)
 
