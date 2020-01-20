@@ -1,16 +1,97 @@
 body {
     margin: 0;
+    background-color: #F7DEBF;
 }
 
 #header {
     background-image: url('../img/header.jpeg');
+    background-position: 70% 40%;
+    font-family: 'Francois One', sans-serif;
+    width: 100%;
+    padding: 7em 0 1.5em 0;
+    font-size: 2em;
+    box-shadow: 0 0 13px black;
 }
 
 #header h1 {
     color: #506770;
-    margin-top: 0;
+    margin: 0;
+    margin-left: 2em;
+    text-shadow: 2px 2px black;
 }
 
 #content {
-    background-color: #F7DEBF;
+    font-family: 'Gupter', serif;
+    display: flex;
+    flex-direction: column;
 }
+
+#description {
+    margin: 0 auto;
+    margin-top: 3.5em;
+    text-align: center;
+    font-size: 1.5em;
+    width: 80%;
+}
+
+#description strong {
+    color: #6D312E;
+}
+
+#menu {
+    margin: 0 auto;
+    width: 80%;
+    justify-content: center;
+}
+
+#menu ul {
+    display: grid;
+    grid-row-gap: 0.65em;
+}
+
+#menu h2:not(:first-child) {
+    margin-top: 1.7em;
+}
+
+.item {
+    text-align: left;
+    grid-column-start: 1;
+}
+
+.price {
+    text-align: right;
+    grid-column-start: 2;
+}
+
+li {
+    list-style: none;
+}
+
+#footer {
+    margin: 0 auto;
+    bottom: 0;
+    margin-bottom: 2em;
+}
+
+#credit {
+    margin-bottom: 0;
+    padding: 0.5em 2em;
+    box-shadow: 3px 3px #506770;
+    font-family: 'Francois One', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+#credit a, #credit a:visited {
+    text-decoration: none;
+    color: #85D9D2;
+}
+
+#credit a:hover {
+    color: #6A846D;
+}
+
+/* 
+selected tab color #85D9D2
+not selected tab color #6A846D
+*/
