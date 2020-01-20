@@ -24,7 +24,7 @@ function loadDescription() {
     // add a new <p> element for each line of the description
     for (let i = 0; i < carbLoadDesc.length; i++) {
         const descLine = document.createElement("p")
-        descLine.textContent = carbLoadDesc[i]
+        descLine.innerHTML = carbLoadDesc[i]
 
         description.appendChild(descLine)
     }
@@ -37,10 +37,16 @@ function createMenuList(list, parentNode) {
         let name = item.name
         let price = item.price
 
-        let node = document.createElement("li")
-        node.textContent = `${name}, \$${price}`
+        let nameNode = document.createElement("li")
+        nameNode.textContent = name
+        nameNode.className = "item"
 
-        parentNode.appendChild(node)
+        let priceNode = document.createElement("li")
+        priceNode.textContent = price
+        priceNode.className = "price"
+
+        parentNode.appendChild(nameNode)
+        parentNode.appendChild(priceNode)
     })
 }
 
@@ -92,9 +98,29 @@ function loadBody() {
     return body
 }
 
+function loadFooter(){
+    const footer = document.createElement("div")
+    footer.id = "footer"
+
+    const credit = document.createElement("p")
+    credit.id = "credit"
+
+    const link = document.createElement("a")
+    link.href = "http://mmboyce.github.io"
+    link.textContent = "W Mathieu Mimms-Boyce"
+
+    credit.textContent = "Created by "
+    credit.appendChild(link)
+
+    footer.appendChild(credit)
+    content.appendChild(footer)
+    return footer
+}
+
 function pageLoad() {
     loadHeader()
     loadBody()
+    loadFooter()
 }
 
 

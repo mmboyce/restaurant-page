@@ -1,9 +1,9 @@
 export const carbLoad = "Carb Load"
 
 const desc1 = `Welcome to ${carbLoad}, the best spot in town for pasta and bread!`
-const desc2 = `In this house, we pride ourselves on the finest baking and culinary talents around.`
-const desc3 = `Our staff has been rated as the best in hospitality FIVE YEARS IN A ROW by the Restaurant Board!`
-const desc4 = `So enjoy good eats and take a load off at the best spot in town, ${carbLoad}`
+const desc2 = `Here at ${carbLoad}, we pride ourselves on the finest baking and culinary talents around.`
+const desc3 = `Our staff has been rated as the best in hospitality <strong>FIVE YEARS IN A ROW</strong> by the Restaurant Board!`
+const desc4 = `So enjoy good eats and take a load off at the best spot in town, ${carbLoad}.`
 
 const sandwiches = [
     { name: 'Mac and Cheese Grilled Cheese', price: 12 },
