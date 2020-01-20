@@ -1,4 +1,4 @@
-export const carbLoad = "Carb Load"
+const carbLoad = "Carb Load"
 const carbSpan = `<span class="carbLoad">${carbLoad}</span>`
 
 const desc1 = `Welcome to ${carbSpan}, the best spot in town for pasta and bread!`
@@ -30,7 +30,9 @@ const sides = [
     { name: 'Garlic Mashed Potatoes', price: 2 }
 ]
 
-export const carbLoadDesc = [desc1, desc2, desc3, desc4]
-export const menuItems = [
+const carbLoadDesc = [desc1, desc2, desc3, desc4]
+const menuItems = [
     sandwiches, pasta, sides
 ]
+
+export default { carbLoad: carbLoad, carbLoadDesc: carbLoadDesc, menuItems: menuItems }

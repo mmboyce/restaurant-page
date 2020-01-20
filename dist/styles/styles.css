@@ -1,11 +1,15 @@
-body {
+html, body {
     margin: 0;
+    height: 100%;
+}
+
+body {
     background-color: #F7DEBF;
 }
 
 #header {
     background-image: url('../img/header.jpeg');
-    background-position: 70% 40%;
+    background-position: -300px 40%;
     width: 100%;
     padding: 7em 0 1.5em 0;
     font-size: 2em;
@@ -46,19 +50,53 @@ p span.carbLoad {
     color: #6D312E;
 }
 
+#body {
+    text-align: center;
+    font-size: 2em;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5em;
+    margin-bottom: 1em;
+}
+
+.nav {
+    margin-bottom: 2em;
+}
+
+.nav:hover {
+    cursor: pointer;
+    color: red;
+}
+
 #menu {
     margin: 0 auto;
+    margin-top: 2.4em;
     width: 80%;
     justify-content: center;
 }
 
+#menu .xButton {
+    text-align: center;
+    padding: 0.5em;
+    font-size: 1.7em;
+}
+
 #menu ul {
     display: grid;
+    grid-column-gap: 2em;
     grid-row-gap: 0.65em;
+}
+
+#menu h2 {
+    font-size: 2em;
 }
 
 #menu h2:not(:first-child) {
     margin-top: 1.7em;
+}
+
+#menu li {
+    font-size: 1.3em;
 }
 
 .item {
@@ -78,7 +116,8 @@ li {
 #footer {
     margin: 0 auto;
     bottom: 0;
-    margin-bottom: 2em;
+    margin-top: 2em;
+    margin-bottom: 6px;
 }
 
 #credit {
@@ -99,7 +138,20 @@ li {
     color: #6A846D;
 }
 
+.xButton {
+    color: white;
+    background-color: black;
+    padding: 0.5em;
+    height: 1em;
+    width: 1em;
+}
+
+.xButton:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
 /* 
-selected tab color #85D9D2
-not selected tab color #6A846D
-*/
+ selected tab color #85D9D2
+ not selected tab color #6A846D
+ */
